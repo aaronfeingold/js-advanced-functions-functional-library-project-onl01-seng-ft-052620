@@ -14,6 +14,7 @@ const fi = (function() {
           action(newThing[i])
         // return the unaltered original array
         return data
+        debugger;
     },
     //  ### PROBLEMS
     // this data sanitation process seems repetitive... 
@@ -134,7 +135,9 @@ const fi = (function() {
     },
 
     sortBy: function(array, callback){
+      // make a shallow copy with the spread operator
       let modified_array = [...array]
+      // call sort, for the love of god
       return modified_array.sort((a,b) => callback(a) - callback(b))
     },
 

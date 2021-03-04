@@ -2,32 +2,35 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 29,
+    "passes": 28,
     "pending": 0,
-    "failures": 5,
-    "start": "2021-03-04T00:56:39.847Z",
-    "end": "2021-03-04T00:56:40.396Z",
-    "duration": 549
+    "failures": 6,
+    "start": "2021-03-04T19:12:06.485Z",
+    "end": "2021-03-04T19:12:43.614Z",
+    "duration": 37129
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 0,
+      "duration": 35117,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/aaronfeingold/Flatiron/code/js-advanced-functions-functional-library-project-onl01-seng-ft-052620/test/indexTest.js)\n    at processImmediate (internal/timers.js:456:21)",
+        "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/aaronfeingold/Flatiron/code/js-advanced-functions-functional-library-project-onl01-seng-ft-052620/test/indexTest.js)"
+      }
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 1,
+      "duration": 746,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 717,
       "currentRetry": 0,
       "err": {}
     },
@@ -41,7 +44,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js map does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,7 +86,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -153,7 +156,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -167,7 +170,7 @@
     {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -181,14 +184,14 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly flattens a ludicrously nested array",
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -202,7 +205,7 @@
     {
       "title": "removes duplicate values from an array",
       "fullTitle": "index.js uniq removes duplicate values from an array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:243:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -222,7 +225,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.keys is not a function\n    at Context.<anonymous> (test/indexTest.js:259:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -256,7 +259,7 @@
     {
       "title": "returns a sorted collection of the names of every method in an object",
       "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.functions is not a function\n    at Context.<anonymous> (test/indexTest.js:293:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -267,9 +270,19 @@
   "pending": [],
   "failures": [
     {
+      "title": "calls alert with each element passed",
+      "fullTitle": "index.js each calls alert with each element passed",
+      "duration": 35117,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/aaronfeingold/Flatiron/code/js-advanced-functions-functional-library-project-onl01-seng-ft-052620/test/indexTest.js)\n    at processImmediate (internal/timers.js:456:21)",
+        "message": "Timeout of 5000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/aaronfeingold/Flatiron/code/js-advanced-functions-functional-library-project-onl01-seng-ft-052620/test/indexTest.js)"
+      }
+    },
+    {
       "title": "removes duplicate values from an array",
       "fullTitle": "index.js uniq removes duplicate values from an array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:243:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -289,7 +302,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js keys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.keys is not a function\n    at Context.<anonymous> (test/indexTest.js:259:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -309,7 +322,7 @@
     {
       "title": "returns a sorted collection of the names of every method in an object",
       "fullTitle": "index.js functions returns a sorted collection of the names of every method in an object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.functions is not a function\n    at Context.<anonymous> (test/indexTest.js:293:29)\n    at processImmediate (internal/timers.js:456:21)",
@@ -319,23 +332,16 @@
   ],
   "passes": [
     {
-      "title": "calls alert with each element passed",
-      "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js each calls alert properly on object values",
-      "duration": 1,
+      "duration": 746,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 717,
       "currentRetry": 0,
       "err": {}
     },
@@ -349,7 +355,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js map does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -391,7 +397,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -461,7 +467,7 @@
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -475,7 +481,7 @@
     {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -489,14 +495,14 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly flattens a ludicrously nested array",
       "fullTitle": "index.js flatten correctly flattens a ludicrously nested array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
